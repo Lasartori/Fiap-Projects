@@ -1,12 +1,12 @@
 import cv2
 import matplotlib.pyplot as plt
 #Uploading an image
-image = cv2.imread('catphoto.jpg')
+image = cv2.imread('gallery/catphoto.jpg')
 
-#Showing the image
-# cv2.imshow('Image', image)
-# cv2.waitKey(0)
-# cv2.destroyAllWindows
+# Showing the image
+cv2.imshow('Image', image)
+cv2.waitKey(0)
+cv2.destroyAllWindows
 
 # Converting to grayscale
 # image_gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
@@ -23,10 +23,10 @@ image = cv2.imread('catphoto.jpg')
 # plt.show()
 
 #Border detecction
-image_gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+# image_gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
-#Detect borders
-border = cv2.Canny(image_gray,100,200)
-plt.imshow(border, cmap='gray')
-plt.axis('off') #disables the axis
-plt.show()
+# #Detect borders
+# border = cv2.Canny(image_gray,100,200)
+# plt.imshow(border, cmap='gray')
+# plt.axis('off') #disables the axis
+# plt.show()
